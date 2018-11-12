@@ -3,24 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shoot : MonoBehaviour {
-
-    public Rigidbody myRigidbody;
-    public float fireDelta = 0.5F;
-    private float nextFire = 0.5F;
-    private float myTime = 0.0F;
-
+    public Rigidbody Spoon;
     void Update()
     {
-        myTime = myTime + Time.deltaTime;
-
-        if (Input.GetButton("Fire1") && myTime > nextFire)
+        if (Input.GetButton("Fire1"))
         {
-            nextFire = myTime + fireDelta;
-            myRigidbody.constraints = RigidbodyConstraints.None;
+            Spoon.mass = 50;
+            GameObject payload = GameObject.FindGameObjectWithTag("payload");
+            if (payload)
+            {
+                payload.transform.SetParent(transform.parent);
+                Destroy(payload, 10f);
+            }
             
-
-            nextFire = nextFire - myTime;
-            myTime = 0.0F;
         }
     }
 }
