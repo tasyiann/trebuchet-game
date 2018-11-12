@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ControlCounterWeight : MonoBehaviour {
     
     public Rigidbody rb;
-    public float multiplier;
+    public float multiplier=2;
     public Text weightText;
 
 	

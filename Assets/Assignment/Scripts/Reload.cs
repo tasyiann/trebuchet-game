@@ -9,6 +9,7 @@ public class Reload : MonoBehaviour {
 		
 	}
     public Rigidbody Spoon;
+    public int SetWeightOnSpoon = 5000;
     public GameObject place;
     public GameObject projectile;
     private GameObject newProjectile;
@@ -20,7 +21,7 @@ public class Reload : MonoBehaviour {
         if (Input.GetButton("Fire2"))
         {
             // Bring Trebuchet back to starting position.
-            Spoon.mass = 500000;
+            Spoon.mass = SetWeightOnSpoon;
         }
     }
 
