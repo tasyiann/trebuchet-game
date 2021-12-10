@@ -1,3 +1,4 @@
 /index.html linguist-vendored
 Build/* linguist-vendored
 TemplateData/* linguist-vendored
+TemplateData/style.css linguist-vendored
