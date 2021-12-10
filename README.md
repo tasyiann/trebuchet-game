@@ -8,5 +8,6 @@
   </p>
   [<a href="https://tasyiann.github.io/trebuchet-game/">Online Demo</a>]
   </br>
-  <img src="https://github.com/tasyiann/trebuchet-game/blob/master/teaser-readme.png" width="50%">
+  </br>
+  <img src="https://github.com/tasyiann/trebuchet-game/blob/master/teaser.PNG" width="50%">
 </div>
